@@ -1,13 +1,16 @@
+/* Règle pour dire que toute la page aura un margin de 5px */
 * {
     margin: 5px;
 }
 
+/* Mise en place de la police, du fond d'écran et centrage du texte */
 body {
     font-family: "Nunito Sans", sans-serif;
-    background-color: beige;
+    background: linear-gradient(90deg, rgba(14, 130, 176, 1) 14%, rgba(176, 14, 127, 1) 100%, rgba(21, 237, 111, 1) 34%);
     text-align: center;
 }
 
+/* Réduction de l'image mise en place de bordures et margin */
 img {
     width: 400px;
     height: 400px;
@@ -16,14 +19,25 @@ img {
     margin: 20px;
 }
 
-ul {
-    list-style-type: none;
+
+/* Margin sur la section ingredients, 0 auto pour centrer, border pour voir la zone de notre class et ajuster la width. Une fois qu'on est satisfait, on peut retirer les bordures */
+.ingredients {
+    margin: 0 auto;
+    width: 20%;
 }
 
-.ingredients {
+/* Margin sur la section preparation */
+.preparation {
     margin: 30px;
 }
 
-.preparation {
+/* Pour jouer sur la taille des icones et leur couleur */
+.icons {
+    font-size: 1rem;
+    color: pink;
+}
+
+/* Pour jouer sur la marge du container des icones */
+.icons-container {
     margin: 30px;
 }
